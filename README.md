@@ -1,3 +1,3 @@
 # Welcome to Gia-Huy Vuong Github.io
 Welcome to our [blog](https://cubist38.github.io)! We make data science easy to understand. We talk about how statistics and probabilities help us make sense of data. Whether you’re a data science expert, a beginner, or just interested, this is the place for you. Let’s explore data science together!
-1. [Probabilities for Data Science](https://cubist38.github.io/index.html)
+1. [Probabilities for Data Science](https://cubist38.github.io/probability.html)
