@@ -12,25 +12,61 @@
             border-radius: 10px; /* Add rounded corners */
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add a shadow effect */
         }
+        body {
+            background-color: #FFDAB9; /* Change the background color of the body */
+        }
+        nav {
+            background-color: #F0E68C; /* Change the background color of the navigation */
+            padding: 10px;
+            border-radius: 10px;
+        }
+        section {
+            background-color: #E6E6FA; /* Change the background color of the sections */
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Probability</h1>
+    <h1>Fundanmentals of Probability for Data Science illustrated with Python examples</h1>
     <nav>
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#overview">Overview</a></li>
-            <li><a href="#detail">Detial</a></li>
+            <li><a href="#probability">Probability and its Significance</a></li>
             <!-- Add more list items for each section -->
         </ul>
     </nav>
     <section id="overview">
         <h2>Overview</h2>
-        <p>Content for Section 1</p>
+        <p>This guide provides an introduction to Probability, a crucial concept in Data Science. 
+            To begin with, we will discuss about the basic topics of Probability, such as  binomial distribution, 
+            central limit theorem, normal distribution, and Z-score. Each concept is explained in a simple, non-mathematical
+            manner and illustrated with examples. 
+        </p>
     </section>
-    <section id="detail">
-        <h2>Detail</h2>
-        <p>Content for Section 2</p>
+    <section id="probability">
+        <h2>Probability and its Significance</h2>
+        <h3>What is the Probability?</h3>
+        <p>Probability is a fundanmental concept in Data Science that quantifies the 
+            likelihood of an event or outcome. The probability of an event is always between 0 and 1. If the probability of an event is 0, 
+            it means that the event is impossible. On the other hand, if the probability of an event is 1, it means that
+            the event is certain.
+        </p>
+        <p>
+            Life is inherently uncertain, with outcomes of various situations remaining unknown until 
+            they occur. Questions about weather, academic success, sports outcomes, and career advancements 
+            exemplify these uncertainties. These scenarios will be related to common terminologies used in our subsequent discussion.
+            <ul>
+                <li><strong>Experiment</strong>: refers to situations with uncertain outcomes, such as daily weather patterns.</ali>
+                <li><strong>Outcome</strong>: is the result of a single instance of an experiment. 
+                    For instance, if it is a sunny day, the outcome of today's weather experiment is "Sunny day"</li>
+                <li><strong>Event</strong>: is one or more outcome from an experiment. "Sunny day" is a possible event for the weather experiment.</li>
+                <li><strong>Probability</strong>: quantifies the likelihood of an event. If there’s a 
+                    80% chance of rain tomorrow, the probability of the outcome “Sunny day” for tomorrow’s weather experiment is 0.8.</li>
+            </ul>
+        </p>
     </section>
     <!-- Add more sections with corresponding ids -->
 </body>
