@@ -2,7 +2,7 @@
 title: Gia-Huy Vuong's Blog
 description: 'Data Science Essentials: A Comprehensive Introduction' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
-baseurl: "/_posts" # the subpath of your site, e.g. /blog
+baseurl: /_posts # the subpath of your site, e.g. /blog
 url: "https://cubist38.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: ""
 logo-icon: ""
@@ -25,7 +25,7 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 
 # Author settings
 author: Gia-Huy Vuong # add your name
-author-pic: /Users/vuonggiahuy/cubist38.github.io/assets/img/avatar.JPG
+author-pic: /assets/img/avatar.JPG
 about-author: I am currently in my fourth year of study at the University of Science, specializing in Computer Science. My passion lies in the fascinating fields of AI, Data Science, Machine Learning, and Deep Learning.
 
 # Contact links
@@ -34,9 +34,6 @@ phone: # Add your Phone number
 website: https://cubist38.github.io # Add your website
 linkedin: giahuyvuong0859 # Add your Linkedin handle
 github: cubist38/cubist38.github.io # Add your Github handle
-twitter: '' # Add your Twitter handle
-bandcamp: '' # Add your Bandcamp username
-stackoverflow: '' # Add your stackoverflow account
 
 # Newsletter
 mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
