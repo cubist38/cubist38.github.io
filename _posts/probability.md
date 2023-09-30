@@ -2,7 +2,7 @@
 layout: post
 read_time: true
 show_date: true
-title: "So, what is a neural network?"
+title: "Probability for Data Science"
 date: 2023-10-01
 img: /assets/img/posts/propability/thumbnail.webp
 tags: [probability, data science]
