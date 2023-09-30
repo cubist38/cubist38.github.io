@@ -20,7 +20,7 @@ url: "https://cubist38.github.io" # the base hostname & protocol for your site, 
 # the browser is closed or not)
 night_mode: "auto"
 
-logo-dark: "/assets/img/branding/machine_learning.png"
+logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
@@ -82,7 +82,7 @@ sass:
 
 plugins:
   - jekyll-paginate
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-sitemap
 
 include: [_pages]

@@ -4,7 +4,7 @@ read_time: true
 show_date: true
 title: "So, what is a neural network?"
 date: 2023-10-01
-img: /Users/vuonggiahuy/cubist38.github.io/assets/img/posts/propability/thumbnail.webp
+img: /assets/img/posts/propability/thumbnail.webp
 tags: [probability, data science]
 category: theory
 author: Gia-Huy Vuong
