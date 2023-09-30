@@ -1,23 +1,13 @@
-*.pyc
-*.jpg
-*.png
-*.zip
-*.rar
-*.tar
-*.DS_Store
 
-# for personal testing, all personal files shouldn't be pushed
-*personal*
-
-# for weights
-*.pth
-inference.pd*
-*.pt
-
-*_old*
-
-/data/
-weights/
-data/public_train/
-data/public_test/
-.vscode/
+.DS_Store
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/the-mvm.github.io.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.vscode/settings.json
+/.vscode/
+/.idea/
+.liquidrc
