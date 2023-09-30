@@ -3,7 +3,7 @@ title: ""
 description: 'Exploring the Intersection of AI Knowledge Sharing and Personal Experiences as a AI Researcher' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
 masthead_title: "Huy Vuong" #overrides the website title displayed in the masthead, use " " for no title
-baseurl: /_posts # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "https://cubist38.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # logo: ""
 # logo-icon: ""
@@ -26,7 +26,7 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 
 # Author settings
 author: "Gia-Huy Vuong" # add your name
-author-pic: /assets/img/avatar.JPG
+author-pic: /assets/img/bio-photo.jpg
 location: "Viet Nam"
 about-author: I am currently in my fourth year of study at the University of Science, specializing in Computer Science. My passion lies in the fascinating fields of AI, Data Science, Machine Learning, and Deep Learning.
 
@@ -84,7 +84,7 @@ sass:
 
 plugins:
   - jekyll-paginate
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-sitemap
 
 include: [_pages]
