@@ -4,9 +4,9 @@ description: 'Data Science Essentials: A Comprehensive Introduction' # this mean
 permalink: ':title:output_ext'
 baseurl: /_posts # the subpath of your site, e.g. /blog
 url: "https://cubist38.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: ""
-logo-icon: ""
-logo-icon-SEO: "" # must be a non SVG file
+# logo: ""
+# logo-icon: ""
+# logo-icon-SEO: "" # must be a non SVG file
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -20,7 +20,7 @@ logo-icon-SEO: "" # must be a non SVG file
 # the browser is closed or not)
 night_mode: "auto"
 
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
+logo-dark: "/assets/img/branding/machine_learning.png"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
