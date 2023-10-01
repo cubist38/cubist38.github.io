@@ -19,7 +19,7 @@ url: "https://cubist38.github.io" # the base hostname & protocol for your site, 
 # visit (session). Only the dark mode setting is "manual",
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
-night_mode: "manual"
+night_mode: "auto"
 
 logo: "/assets/img/branding/logo.jpg"
 logo-dark: "/assets/img/branding/logo.jpg"
