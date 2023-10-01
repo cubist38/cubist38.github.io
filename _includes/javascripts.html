@@ -39,14 +39,14 @@
     function handleThemeToggle(nightShift) {
     themeData.nightShift = nightShift;
     saveThemeData(themeData);
-    // html.dataset.theme = nightShift ? 'dark' : 'light';
-    html.dataset.nightShift = 'dark';
-    logo.setAttribute("src", "{{ logo_url_dark }}");
-    // if (nightShift) {
-    //     logo.setAttribute("src", "{{ logo_url_dark }}");
-    // } else {
-    //     logo.setAttribute("src", "{{ logo_url }}");
-    // }
+    html.dataset.theme = nightShift ? 'dark' : 'light';
+    // html.dataset.nightShift = 'dark';
+    // logo.setAttribute("src", "{{ logo_url_dark }}");
+    if (nightShift) {
+        logo.setAttribute("src", "{{ logo_url_dark }}");
+    } else {
+        logo.setAttribute("src", "{{ logo_url }}");
+    }
     setTimeout(function() {
         sw.checked = nightShift ? true : false;
     }, 50);
@@ -57,7 +57,8 @@
     var now = new Date();
     var toggleAt = new Date();
     var hours = now.getHours();
-    var nightShift = hours >= 19 || hours <=7;
+    // var nightShift = hours >= 19 || hours <=7;
+    var nightShift = true;
 
     if (nightShift) {
         if (hours > 7) {

@@ -26,7 +26,7 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 
 # Author settings
 author: "Gia-Huy Vuong" # add your name
-author-pic: avatar.jpg
+author-pic: profile.jpg
 about-author: I am currently in my fourth year of study at the University of Science, specializing in Computer Science. My passion lies in the fascinating fields of AI, Data Science, Machine Learning, and Deep Learning.
 
 # Contact links
