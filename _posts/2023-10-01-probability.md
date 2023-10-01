@@ -2,7 +2,6 @@
 layout: post
 read_time: true
 show_date: true
-Mathjax: yes
 title: "Fundanmentals of Probability for Data Science illustrated with Python examples"
 date: 2023-09-28
 img: posts/2023-10-01-probability/thumbnail.webp
@@ -79,7 +78,3 @@ The PDF of a continuous random variable must satisfy three conditions:
 Here are some examples of probability density functions for continuous random variables:
 - **Uniform distribution**: The probability of any value between a and b is the same. The PDF of a uniform distribution is given by $\displaystyle f(x) = \frac{1}{b-a}$
 - **Normal distribution**: The normal distribution is a bell-shaped curve that is symmetric about the mean. The PDF of a normal distribution is given by $\displaystyle f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
-
-<p style="text-align:center">
-\(\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t\).
-</p>
