@@ -9,6 +9,7 @@ tags: [probability, data science]
 category: theory
 author: Gia-Huy Vuong
 description: "This guide provides an introduction to Probability, a crucial concept in Data Science. To begin with, we will discuss about the basic topics of Probability, such as binomial distribution, central limit theorem, normal distribution, and Z-score. Each concept is explained in a simple, non-mathematical manner and illustrated with examples."
+toc: yes
 ---
 ## Overview
 This guide provides an introduction to Probability, a crucial concept in Data Science. To begin with, we will discuss about the basic topics of Probability, such as binomial distribution, central limit theorem, normal distribution, and Z-score. Each concept is explained in a simple, non-mathematical manner and illustrated with examples.
@@ -35,7 +36,7 @@ A discrete random variable is a random variable that can only take on a finite n
 - **Condition 2**: The sum of the probabilities of all the values of the discrete random variable must be 1.
 For instance, suppose we are interested in the number of heads that will appear when a coin is tossed three times. The possible values of the random variable X are 0, 1, 2, and 3. The PMF of X is given by:
 
-    ![Example sdfds](posts/2023-10-01-probability/table.png)
+    ![Example](posts/2023-10-01-probability/table.png)
 
 The table provides the following probabilities for a discrete random variable:
 - There's a chance of getting $0$ ($P(X=0) = 0.1$).
@@ -65,9 +66,11 @@ In detail, examples of continuous random variables include:
 - The temperature on a given day
 
 The probability distribution of a continuous random variable is known as the **probability density function** (PDF). Suppose $\displaystyle X$ is a continuous random variable with a probability distribution function $\displaystyle F_X(x)$. If the function $\displaystyle f_X(x)$ exists such that:
+
 $$
   \displaystyle  F_X(x) = \int_{-\infin}^xf_X(t)dt
 $$
+
 then $\displaystyle f_X(x)$ is called the **probability density function** (PDF) of the random variable X.
 
 The PDF of a continuous random variable must satisfy three conditions:
