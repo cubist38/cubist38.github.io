@@ -67,16 +67,15 @@ In detail, examples of continuous random variables include:
 
 The probability distribution of a continuous random variable is known as the **probability density function** (PDF). Suppose $\displaystyle X$ is a continuous random variable with a probability distribution function $\displaystyle F_X(x)$. If the function $\displaystyle f_X(x)$ exists such that:
 
-$$
-  \displaystyle  F_X(x) = \int_{-\infin}^xf_X(t)dt
-$$
+<p style="text-align: center;">$\displaystyle F_X(x) = \int_{-\infty}^xf_X(t)dt$
+</p>
 
 then $\displaystyle f_X(x)$ is called the **probability density function** (PDF) of the random variable X.
 
 The PDF of a continuous random variable must satisfy three conditions:
 - $\displaystyle f_X(x) \geq 0,\ \forall x \in R$
 - $\displaystyle P(a<X<b) = \int_a^bf_X(x)dx$
-- $\displaystyle \int_{-\infin}^{\infin}f_X(x)dx = 1$
+- $\displaystyle \int_{-\infty}^{\infty}f_X(x)dx = 1$
 
 Here are some examples of probability density functions for continuous random variables:
 - **Uniform distribution**: The probability of any value between a and b is the same. The PDF of a uniform distribution is given by $\displaystyle f(x) = \frac{1}{b-a}$
