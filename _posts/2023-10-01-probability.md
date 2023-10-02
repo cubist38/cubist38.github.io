@@ -36,7 +36,7 @@ A discrete random variable is a random variable that can only take on a finite n
 - **Condition 2**: The sum of the probabilities of all the values of the discrete random variable must be 1.
 For instance, suppose we are interested in the number of heads that will appear when a coin is tossed three times. The possible values of the random variable X are 0, 1, 2, and 3. The PMF of X is given by:
 
-    ![Example](posts/2023-10-01-probability/table.png)
+    ![Example](assets/img/posts/2023-10-01-probability/table.png)
 
 The table provides the following probabilities for a discrete random variable:
 - There's a chance of getting $0$ ($P(X=0) = 0.1$).
