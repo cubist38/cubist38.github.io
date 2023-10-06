@@ -2,10 +2,10 @@
 layout: post
 read_time: true
 show_date: true
-title: "Fundanmentals of Probability for Data Science illustrated with Python examples"
+title: "Fundanmentals of Probability illustrated with Python examples"
 date: 2023-09-28
 img: posts/2023-10-01-probability/thumbnail.webp
-tags: [probability, data science]
+tags: [probability, ai, data science]
 category: theory
 author: Gia-Huy Vuong
 description: "This guide provides an introduction to Probability, a crucial concept in Data Science. To begin with, we will discuss about the basic topics of Probability, such as binomial distribution, central limit theorem, normal distribution, and Z-score. Each concept is explained in a simple, non-mathematical manner and illustrated with examples."
@@ -77,6 +77,33 @@ The PDF of a continuous random variable must satisfy three conditions:
 - $\displaystyle P(a<X<b) = \int_a^bf_X(x)dx$
 - $\displaystyle \int_{-\infty}^{\infty}f_X(x)dx = 1$
 
-Here are some examples of probability density functions for continuous random variables:
+<!-- Here are some examples of probability density functions for continuous random variables:
 - **Uniform distribution**: The probability of any value between a and b is the same. The PDF of a uniform distribution is given by $\displaystyle f(x) = \frac{1}{b-a}$
 - **Normal distribution**: The normal distribution is a bell-shaped curve that is symmetric about the mean. The PDF of a normal distribution is given by $\displaystyle f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
+- **Exponential distribution**: The exponential distribution is used to model the time between events that occur continuously and independently at a constant average rate. The PDF of an exponential distribution is given by $\displaystyle f(x) = \lambda e^{-\lambda x}$ -->
+
+To generate a random number from [the uniform distribution](#uniform-distribution) in Python, we can use the ``numpy.random.uniform()`` function. This function takes two arguments: the minimum and maximum values of the distribution. For example, the following code generates a random number from the uniform distribution between 0 and 1:
+```
+    import numpy as np
+
+    # Generate a random number from the uniform distribution between 0 and 1
+    random_number = np.random.uniform(0, 1)
+
+    # Print the random number
+    print(random_number)
+```
+## Popular distributions
+### Normal distribution
+The normal distribution, also known as the Gaussian distribution, is a continuous probability distribution that is symmetric and bell-shaped. It is the most commonly used distribution in data science, and it is often used to model continuous data such as height, weight, and test scores. The general form of its probability density function is:
+<p style="text-align: center;">$\displaystyle f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
+</p>
+
+### Binomial distribution
+The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). It is often used to model categorical data such as the number of heads in a coin toss or the number of defective products in a batch.
+### Exponential distribution
+The exponential distribution is a continuous probability distribution that describes the time it takes for a single event to occur. It is often used to model event data such as the time it takes for a customer to arrive at a store or the time it takes for a radioactive atom to decay.
+<!-- - **Exponential distribution**: The exponential distribution is used to model the time between events that occur continuously and independently at a constant average rate. The PDF of an exponential distribution is given by $\displaystyle f(x) = \lambda e^{-\lambda x}$ -->
+### Uniform distribution
+The uniform distribution is a continuous probability distribution in which all values between a minimum and maximum value are equally likely. It is often used to model random data such as the time of day that a customer arrives at a store or the location of a click on a website.
+### Poisson distribution
+The Poisson distribution is a discrete probability distribution that describes the likelihood of a certain number of events occurring in a fixed interval of time or space. It is often used to model count data such as the number of customers arriving at a store in an hour or the number of goals scored in a soccer match.
