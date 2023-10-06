@@ -12,7 +12,7 @@ description: "This guide provides an introduction to Probability, a crucial conc
 toc: yes
 ---
 ## Overview
-This guide provides an introduction to Probability, a crucial concept in Data Science. To begin with, we will discuss about the basic topics of Probability, such as binomial distribution, central limit theorem, normal distribution, and Z-score. Each concept is explained in a simple, non-mathematical manner and illustrated with examples.
+This guide provides an introduction to Probability, a crucial concept in Data Science. To begin with, we will discuss about the basic topics of Probability, such as common distributions, central limit theorem, and Z-score. Each concept is explained in a simple, non-mathematical manner and illustrated with examples.
 ## Probability and its Significance
 ### What is the Probability?
 Probability is a fundanmental concept in Data Science that quantifies the likelihood of an event or outcome. The probability of an event is always between 0 and 1. If the probability of an event is 0, it means that the event is impossible. On the other hand, if the probability of an event is 1, it means that the event is certain.
@@ -92,14 +92,15 @@ To generate a random number from [the uniform distribution](#uniform-distributio
     # Print the random number
     print(random_number)
 ```
-## Popular distributions
+## Common distributions
+### Binomial distribution
+The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). The binomial distribution serves as a fundamental cornerstone in social science statistics, particularly when modeling outcomes with two possible results. For example, it can predict a Republican or Democrat will win an upcoming election, whetheran individual will die within a specified period of time, etc. It also has applications in finance, banking, and insurance, among other industries.
+
 ### Normal distribution
 The normal distribution, also known as the Gaussian distribution, is a continuous probability distribution that is symmetric and bell-shaped. It is the most commonly used distribution in data science, and it is often used to model continuous data such as height, weight, and test scores. The general form of its probability density function is:
 <p style="text-align: center;">$\displaystyle f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
 </p>
 
-### Binomial distribution
-The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). It is often used to model categorical data such as the number of heads in a coin toss or the number of defective products in a batch.
 ### Exponential distribution
 The exponential distribution is a continuous probability distribution that describes the time it takes for a single event to occur. It is often used to model event data such as the time it takes for a customer to arrive at a store or the time it takes for a radioactive atom to decay.
 <!-- - **Exponential distribution**: The exponential distribution is used to model the time between events that occur continuously and independently at a constant average rate. The PDF of an exponential distribution is given by $\displaystyle f(x) = \lambda e^{-\lambda x}$ -->
