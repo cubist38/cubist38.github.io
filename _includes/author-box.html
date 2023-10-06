@@ -5,19 +5,27 @@
     <a href='{{ site.website }}'><img src="{{ relativebase }}assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{ site.author }}" class="author-img"></a>
     <ul class="contact-icons">
       {% if site.twitter %}
-      <li class="twitter"><a class="twitter" href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="twitter"><a class="twitter" href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
       {% endif %}
       {% if site.linkedin %}
-      <li class="linkedin"><a class="linkedin" href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li class="linkedin"><a class="linkedin" href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       {% endif %}
       {% if site.github %}
-      <li class="github"><a class="github" href="http://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li class="github"><a class="github" href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
       {% endif %}
       {% if site.email %}
-      <li class="email"><a class="email" href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i></a></li>
+        <li class="email"><a class="email" href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i></a></li>
+      {% endif %}
+      {% if site.bandcamp %}
+        <li class="bandcamp"><a class="bandcamp" href="https://{{site.bandcamp}}.bandcamp.com" target="_blank"><i class="fa fa-bandcamp" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if site.stackoverflow %}
-      <li class="stackoverflow"><a class="stackoverflow" href="https://stackoverflow.com/users/{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a></li>
+      <li class="stackoverflow"><a class="stackoverflow" href="https://stackoverflow.com/users/{{site.stackoverflow}}" target="_blank">
+        <i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+      {% endif %}
+      {% if site.google %}
+      <li class="google"><a class="google" href={{site.google}} target="_blank">
+        <i class="fa fa-google" aria-hidden="true"></i></a></li>
       {% endif %}
     </ul>
   </div>
