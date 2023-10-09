@@ -47,14 +47,14 @@ The sum of these probabilities gives us a total of 1 ($0.1 + 0.4 + 0.3 + 0.2 = 1
 
 Here is a simple example of a random discrete variable in Python:
 ```
-    import numpy as np
-    # Define the probability distribution
-    p = np.array([0.1, 0.4, 0.3, 0.2])
+import numpy as np
+# Define the probability distribution
+p = np.array([0.1, 0.4, 0.3, 0.2])
 
-    # Define the random variable
-    X = np.random.choice([0, 1, 2, 3], p=p)
+# Define the random variable
+X = np.random.choice([0, 1, 2, 3], p=p)
 
-    print(X)
+print(X)
 ```
 ### Continuous Random Variable
 A continuous random variable is a random variable that can take on any value in an interval. This means that there are infinitely many possible values for the variable. Continuous random variables are often used to represent quantities that can be measured infinitely precisely, such as height, weight, or temperature.
@@ -84,16 +84,16 @@ The PDF of a continuous random variable must satisfy three conditions:
 
 To generate a random number from [the uniform distribution](#uniform-distribution) in Python, we can use the ``numpy.random.uniform()`` function. This function takes two arguments: the minimum and maximum values of the distribution. For example, the following code generates a random number from the uniform distribution between 0 and 1:
 ```
-    import numpy as np
+import numpy as np
 
-    # Generate a random number from the uniform distribution between 0 and 1
-    random_number = np.random.uniform(0, 1)
+# Generate a random number from the uniform distribution between 0 and 1
+random_number = np.random.uniform(0, 1)
 
-    # Print the random number
-    print(random_number)
+# Print the random number
+print(random_number)
 ```
 ## Common distributions
-### Binomial distribution
+### Binomial distribution 
 The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). The binomial distribution serves as a fundamental cornerstone in social science statistics, particularly when modeling outcomes with two possible results. For example, it can predict a Republican or Democrat will win an upcoming election, whetheran individual will die within a specified period of time, etc. It also has applications in finance, banking, and insurance, among other industries. 
 
 To illustrate my point, let’s consider a funny example involving a dog named Lucky:
@@ -122,21 +122,21 @@ P(X = 3) = $\displaystyle {10 \choose 3}*0.2^3*(1-0.2)^{10-3} = 0.193$
 In addition, you can use the ``scipy`` library in Python, which has a built-in function to calculate binomial distribution. Here’s how you can do it:
 
 ```
-    from scipy.stats import binom
+from scipy.stats import binom
 
-    # number of trials
-    n = 10
+# number of trials
+n = 10
 
-    # probability of success
-    p = 0.2
+# probability of success
+p = 0.2
 
-    # number of successes
-    k = 3
+# number of successes
+k = 3
 
-    # calculate binomial distribution
-    prob = binom.pmf(k, n, p)
-    
-    print(f"The probability that Whiskers will catch the laser pointer exactly {k} times in {n} attempts is {prob}")
+# calculate binomial distribution
+prob = binom.pmf(k, n, p)
+
+print(f"The probability that Lucky will catch the laser pointer exactly {k} times in {n} attempts is {prob}")
 ```
 
 ### Normal distribution
