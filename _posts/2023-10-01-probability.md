@@ -94,12 +94,53 @@ To generate a random number from [the uniform distribution](#uniform-distributio
 ```
 ## Common distributions
 ### Binomial distribution
-The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). The binomial distribution serves as a fundamental cornerstone in social science statistics, particularly when modeling outcomes with two possible results. For example, it can predict a Republican or Democrat will win an upcoming election, whetheran individual will die within a specified period of time, etc. It also has applications in finance, banking, and insurance, among other industries.
+The binomial distribution is a discrete probability distribution that describes the likelihood of a specific number of successes in a sequence of n independent trials, each with two possible outcomes (success or failure). The binomial distribution serves as a fundamental cornerstone in social science statistics, particularly when modeling outcomes with two possible results. For example, it can predict a Republican or Democrat will win an upcoming election, whetheran individual will die within a specified period of time, etc. It also has applications in finance, banking, and insurance, among other industries. 
+
+To illustrate my point, let’s consider a funny example involving a dog named Lucky:
+
+Lucky is a very curious cat and has a peculiar habit. Every time he sees a red laser pointer, he tries to catch it. Let's say that the probability of his successfully catching the laser point on any given attempt is 20%. 
+
+Now, suppose his onwer decides to play with him using the laser pointer and gives Lucky 10 attemps to catch it. We want to find out the probability that Lucky will successfully catch the laser pointer exactly 3 times out of these 10 attemps.
+
+This is a classic example of a binomial distribution problem. In a binomial distribution, there are two possible outcomes for each trial, and the probability of success on each trial is the same. In this case, the two possible outcomes are "catch" and "miss", and the probability of catching the laser pointer on each attempt is 0.2.
+
+To calculate the probability that Lucky will catch the laser pointer exactly 3 times in 10 attempts, we use the binomial distribution formula:
+
+<p style="text-align: center;">$\displaystyle P(X=k) = {n \choose k}p^k(1-p)^{n-k}$
+</p>
+where:
+
+- n is the number of trials (10 in this case)
+- k is the number of successes (3 in this case)
+- p is the probability of success on each trial (0.2 in this case)
+
+Plugging in these values, we get:
+<p style = "text-align: center;">
+P(X = 3) = $\displaystyle {10 \choose 3}*0.2^3*(1-0.2)^{10-3} = 0.193$
+</p>
+
+In addition, you can use the ``scipy`` library in Python, which has a built-in function to calculate binomial distribution. Here’s how you can do it:
+
+```
+    from scipy.stats import binom
+
+    # number of trials
+    n = 10
+
+    # probability of success
+    p = 0.2
+
+    # number of successes
+    k = 3
+
+    # calculate binomial distribution
+    prob = binom.pmf(k, n, p)
+    
+    print(f"The probability that Whiskers will catch the laser pointer exactly {k} times in {n} attempts is {prob}")
+```
 
 ### Normal distribution
 The normal distribution, also known as the Gaussian distribution, is a continuous probability distribution that is symmetric and bell-shaped. It is the most commonly used distribution in data science, and it is often used to model continuous data such as height, weight, and test scores. The general form of its probability density function is:
-<p style="text-align: center;">$\displaystyle f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
-</p>
 
 ### Exponential distribution
 The exponential distribution is a continuous probability distribution that describes the time it takes for a single event to occur. It is often used to model event data such as the time it takes for a customer to arrive at a store or the time it takes for a radioactive atom to decay.
